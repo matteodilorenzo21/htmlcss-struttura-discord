@@ -1,6 +1,105 @@
+/* Custom properties */
+
+:root {
+    --header-bg-color: #ADD8E6;
+    --header-box-color: #DAA520;
+    --space-m: 15px;
+
+}
+
 /* Reset properties */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Generics */
+
+body {
+    font-family: Verdana;
+}
+
+header {
+    height: 100px;
+    background-color: var(--header-bg-color);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Utilities */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 0 20%;
+}   
+
+.container-flex > * {
+    border: 2px dashed #000;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Header assets */
+
+.hdr-logo {
+    flex-basis: 25%;
+    min-height: 50px;
+    background-color: var(--header-box-color);
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    justify-content: flex-start;
+    padding-top: 12.5px;
+    padding-left: 10px;
+}
+
+.hdr-nav {
+    flex-basis: 50%;
+    min-height: 50px;
+    background-color: var(--header-box-color);
+}
+
+ul {
+    justify-content: center;
+    padding-top: 12.5px;
+}
+
+li {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.hdr-login {
+    flex-basis: 25%;
+    min-height: 50px;
+    background-color: var(--header-box-color);  
+}
+
+#login-btn {
+    justify-content: flex-end;
+    padding-top: 12.5px;
+    padding-right: 10px;
 }
